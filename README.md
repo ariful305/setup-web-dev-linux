@@ -126,5 +126,28 @@ Run:
 ping -c1 foobar.test
 ```
 
+## park location
+
+```bash
+valet park
+```
+
+## link a project
+
+```bash
+valet link
+```
+
+## show all links
+
+```bash
+valet links
+```
+
+## secure link
+
+```bash
+valet secure
+```
 
 This README provides a structured and formatted guide for installing **Valet Linux+** on Ubuntu. Let me know if you want any modifications! 🚀
