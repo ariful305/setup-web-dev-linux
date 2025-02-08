@@ -4,6 +4,7 @@ The official Laravel Valet development environment is great for Apple users, but
 
 - **[cpriego/valet-linux](https://github.com/cpriego/valet-linux) (Valet Linux)**
 - **[genesisweb/valet-linux-plus](https://github.com/genesisweb/valet-linux-plus) (Valet Linux+)**
+- **[nvm-sh/nvm](https://github.com/nvm-sh/nvm) (Node Version Manager)**
 
 Among these, **Valet Linux+** has more features, such as MySQL database handling from the command line, MailHog, Redis, sharing sites on LAN, securing sites with TLS (HTTPS), and more.
 
@@ -150,4 +151,41 @@ valet links
 valet secure
 ```
 
-This README provides a structured and formatted guide for installing **Valet Linux+** on Ubuntu. Let me know if you want any modifications! 🚀
+## Installing NVM
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+```
+
+Attempts to add the source lines from the snippet below to the correct profile file (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).
+
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+Reload configuration using :
+
+```bash
+source ~/.zshrc
+```
+Check the installed version, by running:
+
+```bash
+nvm --version
+```
+
+See  list all available node.js versions:
+
+```bash
+nvm ls-remote
+
+```
+
+Install latest LTS version of node:
+
+```bash
+nvm install --lts
+
+```
+
