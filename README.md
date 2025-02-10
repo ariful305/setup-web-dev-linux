@@ -55,7 +55,6 @@ Valet Linux+ installs MySQL automatically, but it's better to install it manuall
 
 ```bash
 sudo apt-get -y install mysql-server
-sudo mysql_secure_installation
 ```
 
 ### Configure MySQL Authentication
