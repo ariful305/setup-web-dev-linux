@@ -12,7 +12,7 @@ This guide will show you how to install **Valet Linux+** on an Ubuntu system.
 
 ## Requirements
 
-- **Ubuntu or any ubuntu base distro**
+- **Ubuntu base distro**
 
 ## Install Dependencies
 
